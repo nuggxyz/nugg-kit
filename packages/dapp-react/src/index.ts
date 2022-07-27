@@ -1,3 +1,3 @@
-import useNuggKitQR from './useNuggKitQR';
+import NuggKitQR from './NuggKitQR';
 
-export { useNuggKitQR };
+export default { NuggKitQR };

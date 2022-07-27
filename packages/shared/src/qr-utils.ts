@@ -1,5 +1,7 @@
 import QRCodeUtil from 'qrcode';
 
+export const QR_SIZE = 250;
+export const LOGO_SIZE = 65;
 const generateMatrix = (
 	value: object,
 	errorCorrectionLevel: QRCodeUtil.QRCodeErrorCorrectionLevel,
@@ -27,51 +29,36 @@ const generateMatrix = (
 	}, [] as QRCodeUtil.QRCode[][]);
 };
 
-export const makeSvg = (
-	logoUri: string,
-	size: number,
-	logoWrapperSize: number,
-	logoPosition: number,
-	logoSize: number,
-	logoBackground: string,
-	dots: string[],
-) => {
+export const makeSvg = (dots: string[]) => {
 	return `<svg
 		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 ${size} ${size}"
-                style="all: revert;"
+		viewBox="0 0 ${QR_SIZE} ${QR_SIZE}"
             >
-                <defs>
-                    <clipPath id="clip-wrapper">
-                        <rect
-                            height="${logoWrapperSize}"
-                            width="${logoWrapperSize}"
-                        />
-                    </clipPath>
-                    <clipPath id="clip-logo">
-                        <rect
-                            height="${logoSize}"
-                            width="${logoSize}"
-                            fill="${logoBackground}"
-                        />
-                    </clipPath>
-                </defs>
-                <image href="${logoUri}" height="200" width="200" style="position: absolute; top: ${logoPosition}; right: 0; left: 0;"/>
-				<g>
+				<svg viewBox="0 0 815.32 815.32" y="${
+					QR_SIZE / 2 - LOGO_SIZE / 2
+				}" x="${0}" height="${LOGO_SIZE}" fill="transparent" color="transparent">
+				<circle fill="#FFF" cx="407.66" cy="407.66" r="407.66"></circle>
+				<polygon fill="rgba(52,52,52,1.0)" transform="translate(50,50)" points="357.66 67.37 357.66 282.37 536.08 363.41 357.66 67.37"></polygon>
+				<polygon fill="rgba(140,140,140,1.0)" transform="translate(50,50)" points="357.66 502.59 357.66 647.95 179.21 397.31 357.66 502.59"></polygon>
+				<polygon fill="rgba(60,60,59,1.0)" transform="translate(50,50)" points="357.66 502.59 357.66 647.95 536.11 397.31 357.66 502.59"></polygon>
+				<polygon fill="rgba(140,140,140,1.0)" transform="translate(50,50)" points="357.66 67.37 357.66 282.37 179.24 363.41 357.66 67.37"></polygon>
+				<polygon fill="#141414" transform="translate(50,50)" points="357.66 282.37 357.66 468.97 536.08 363.41 357.66 282.37"></polygon>
+				<polygon fill="#393939" transform="translate(50,50)" points="357.66 282.37 357.66 468.97 179.24 363.41 357.66 282.37"></polygon>
+				</svg>
+					<g>
                 <rect
                     fill="transparent"
-                    height="${size}"
-                    width="${size}"
+                    height="${QR_SIZE}"
+                    width="${QR_SIZE}"
                 />
                 ${dots.join('')}
 				</g>
-            </svg>`;
+            </svg>`.replaceAll('\n', '');
 };
 
 export const makeDots = (
 	ecl: QRCodeUtil.QRCodeErrorCorrectionLevel,
-	logoSize: number,
-	size: number,
+	// size: number,
 	uri: {
 		code: string;
 		key: string;
@@ -80,7 +67,7 @@ export const makeDots = (
 	const dots: string[] = [];
 	const matrix = generateMatrix(uri, ecl);
 
-	const cellSize = size / matrix.length;
+	const cellSize = QR_SIZE / matrix.length;
 	const qrList = [
 		{ x: 0, y: 0 },
 		{ x: 1, y: 0 },
@@ -106,7 +93,7 @@ export const makeDots = (
 		}
 	});
 
-	const clearArenaSize = Math.floor((logoSize + 25) / cellSize);
+	const clearArenaSize = Math.floor((LOGO_SIZE + 15) / cellSize);
 	const matrixMiddleStart = matrix.length / 2 - clearArenaSize / 2;
 	const matrixMiddleEnd = matrix.length / 2 + clearArenaSize / 2 - 1;
 

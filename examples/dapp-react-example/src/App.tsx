@@ -1,18 +1,9 @@
 import React, { useState } from 'react';
-import { useNuggKitQR } from 'dapp-react/src';
 import './App.css';
+import NuggKitQR from 'dapp-react/src/NuggKitQR';
 
 const App = () => {
 	const [count, setCount] = useState(0);
-
-	const Svg = useNuggKitQR(
-		{ code: '1234', key: '2343' },
-		{
-			ecl: 'M',
-			size: 400,
-			logoSize: 50,
-		},
-	);
 
 	return (
 		<div className="App">
@@ -22,19 +13,12 @@ const App = () => {
 					flexDirection: 'column',
 					alignItems: 'center',
 					justifyContent: 'center',
-					width: 600,
-					height: 600,
+					width: 200,
+					height: 200,
 					background: 'trqnsparent',
 				}}
 			>
-				<svg>
-					<circle
-						cx={10}
-						cy={10}
-						r={10}
-					/>
-				</svg>
-				{Svg}
+				<NuggKitQR data={{ code: '1234', key: '2343' }} />
 			</div>
 			<h1>Vite + React</h1>
 			<div className="card">

@@ -1,6 +1,6 @@
 import type { QRCodeErrorCorrectionLevel } from 'qrcode';
 import React from 'react';
-import { makeDots, makeSvg } from 'shared/src';
+import { makeDots, makeSvg } from 'shared/src/qr-utils';
 
 const getParsed = (input: string) => {
 	if (input.startsWith('ERROR') || input === '') {
@@ -27,46 +27,17 @@ const getSvgObject = (input: string) => {
 
 type Props = {
 	ecl?: QRCodeErrorCorrectionLevel;
-	logoBackground?: string;
-	logoUrl?: string;
-	logoMargin?: number;
-	logoSize?: number;
-	size?: number;
+	data: { key: string; code: string };
 };
 
-const useSvgString = (
-	data: { key: string; code: string },
-	{
-		ecl = 'M',
-		logoBackground,
-		logoMargin = 10,
-		logoSize = 50,
-		logoUrl,
-		size: sizeProp = 200,
-	}: Props,
-) => {
-	const padding = '20';
-
-	const size = sizeProp - parseInt(padding, 10) * 2;
-
-	const logoPosition = size / 2 - logoSize / 2;
-	const logoWrapperSize = logoSize + logoMargin * 2;
-
+const useSvgString = ({ ecl = 'M', data }: Props) => {
 	const dots = React.useMemo(() => {
-		return makeDots(ecl, logoSize, size, data);
-	}, [ecl, logoSize, size, data]);
+		return makeDots(ecl, data);
+	}, [ecl, data]);
 
 	const svg = React.useMemo(() => {
-		return makeSvg(
-			logoUrl ?? '',
-			size,
-			logoWrapperSize,
-			logoPosition,
-			logoSize,
-			logoBackground ?? 'transparent',
-			dots,
-		);
-	}, [size, logoWrapperSize, logoSize, dots, logoBackground, logoPosition, logoUrl]);
+		return makeSvg(dots);
+	}, [dots]);
 
 	return svg;
 };
@@ -87,6 +58,8 @@ const QR = React.memo(
 				svg.documentElement.id = id;
 				svg.documentElement.classList.add('customized-dotnugg');
 
+				// const div2 = svg.getElementById('hi') as unknown as SVGElement | undefined;
+
 				div.replaceWith(svg.documentElement);
 			} else {
 				const div = document.getElementById(id);
@@ -100,25 +73,17 @@ const QR = React.memo(
 	(prev, curr) => prev.svgString === curr.svgString,
 );
 
-export default (
-	data: { key: string; code: string },
-	{
-		ecl = 'M',
-		logoBackground,
-		logoMargin = 10,
-		logoSize = 50,
-		logoUrl,
-		size: sizeProp = 200,
-	}: Props,
-) => {
-	const svgString = useSvgString(data, {
+export const useNuggKitQR = (data: Props['data'], ecl = 'M' as Props['ecl']) => {
+	const svgString = useSvgString({
+		data,
 		ecl,
-		logoBackground,
-		logoMargin,
-		logoSize,
-		logoUrl,
-		size: sizeProp,
 	});
 
 	return <QR svgString={svgString} />;
 };
+
+const NuggKitQR = ({ ecl = 'M', data }: Props) => {
+	return useNuggKitQR(data, ecl);
+};
+
+export default NuggKitQR;

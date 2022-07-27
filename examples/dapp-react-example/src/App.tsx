@@ -27,6 +27,13 @@ const App = () => {
 					background: 'trqnsparent',
 				}}
 			>
+				<svg>
+					<circle
+						cx={10}
+						cy={10}
+						r={10}
+					/>
+				</svg>
 				{Svg}
 			</div>
 			<h1>Vite + React</h1>

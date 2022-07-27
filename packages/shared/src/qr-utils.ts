@@ -37,7 +37,8 @@ export const makeSvg = (
 	dots: string[],
 ) => {
 	return `<svg
-				viewBox="0 0 ${size} ${size}"
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 ${size} ${size}"
                 style="all: revert;"
             >
                 <defs>
@@ -56,12 +57,14 @@ export const makeSvg = (
                     </clipPath>
                 </defs>
                 <image href="${logoUri}" height="200" width="200" style="position: absolute; top: ${logoPosition}; right: 0; left: 0;"/>
+				<g>
                 <rect
                     fill="transparent"
                     height="${size}"
                     width="${size}"
                 />
                 ${dots.join('')}
+				</g>
             </svg>`;
 };
 

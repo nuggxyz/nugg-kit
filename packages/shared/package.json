@@ -1,0 +1,11 @@
+{
+	"name": "shared",
+	"main": "dist/index.js",
+	"packageManager": "yarn@3.2.1",
+	"dependencies": {
+		"qrcode": "^1.5.1"
+	},
+	"devDependencies": {
+		"@types/qrcode": "^1"
+	}
+}

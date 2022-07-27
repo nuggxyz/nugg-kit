@@ -1,0 +1,43 @@
+{
+	"plugins": [
+		"@babel/plugin-proposal-export-namespace-from",
+		["@babel/plugin-proposal-decorators", { "legacy": true }],
+		[
+			"module-resolver",
+			{
+				"root": ["."],
+				"extensions": [".js", ".ts", ".tsx", ".json"],
+				"alias": {
+					"@nuggxyz/nugg-kit": "./packages"
+				}
+			}
+		],
+		["macros"],
+		["babel-plugin-dev-expression"],
+		[
+			"babel-plugin-inline-import",
+			{
+				"extensions": [".svg"]
+			}
+		]
+	],
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"node": "current"
+				},
+				"useBuiltIns": "usage",
+				"corejs": 3
+			}
+		],
+		"@babel/preset-typescript",
+		"@babel/preset-react"
+	],
+	"env": {
+		"production": {
+			"plugins": ["transform-remove-console"]
+		}
+	}
+}

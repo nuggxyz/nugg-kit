@@ -1,0 +1,17 @@
+{
+	"printWidth": 100,
+	"endOfLine": "lf",
+	"trailingComma": "all",
+	"tabWidth": 4,
+	"singleQuote": true,
+	"useTabs": true,
+	"singleAttributePerLine": true,
+	"overrides": [
+		{
+			"files": ["*.yml", "*.yaml", ".graphqlrc"],
+			"options": {
+				"printWidth": 50
+			}
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"name": "dapp-react",
+	"packageManager": "yarn@3.2.1",
+	"main": "dist/index.js",
+	"dependencies": {
+		"react": "^18.2.0",
+		"shared": "workspace:^"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.15"
+	}
+}

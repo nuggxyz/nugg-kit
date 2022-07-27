@@ -1,0 +1,30 @@
+{
+	// "extends": "@tsconfig/react-native/tsconfig.json" /* Recommended React Native TSConfig base */,
+	"compilerOptions": {
+		"target": "es2022",
+		"lib": ["esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"baseUrl": ".",
+		"outDir": "./dist",
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
+		"paths": {
+			"@nuggxyz/nugg-kit/*": ["packages"]
+		},
+		"types": ["node", "jest"],
+		"strict": true,
+		"strictNullChecks": true
+	},
+	"include": ["packages", "examples"],
+	"exclude": ["node_modules"]
+}

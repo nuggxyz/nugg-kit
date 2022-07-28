@@ -1,0 +1,17 @@
+{
+    overwrite: true,
+    schema: [./lib/schema.graphql],
+    documents: src/**/*,
+    generates:
+        {
+            ./src/gen/graphql.types.ts:
+                {
+                    plugins:
+                        [
+                            typescript,
+                            typescript-operations,
+                            typescript-graphql-request,
+                        ],
+                },
+        },
+}

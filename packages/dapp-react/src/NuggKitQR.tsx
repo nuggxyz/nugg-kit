@@ -58,8 +58,6 @@ const QR = React.memo(
 				svg.documentElement.id = id;
 				svg.documentElement.classList.add('customized-dotnugg');
 
-				// const div2 = svg.getElementById('hi') as unknown as SVGElement | undefined;
-
 				div.replaceWith(svg.documentElement);
 			} else {
 				const div = document.getElementById(id);

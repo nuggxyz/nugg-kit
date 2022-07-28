@@ -1,0 +1,32 @@
+input DataPayload {
+	data: String!
+	id: ID!
+}
+
+input IdPayload {
+	id: ID!
+}
+
+type Mutation {
+	done(input: DataPayload!): Response
+	find(input: IdPayload!): Response
+}
+
+type Query {
+	find(input: IdPayload!): Response
+}
+
+type Response {
+	data: String
+	id: ID
+}
+
+type Subscription {
+	wait(input: DataPayload!): Response
+}
+
+schema {
+	query: Query
+	mutation: Mutation
+	subscription: Subscription
+}

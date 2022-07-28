@@ -1851,7 +1851,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/cli@npm:^2.9.1":
+"@graphql-codegen/cli@npm:^2.11.0":
   version: 2.11.0
   resolution: "@graphql-codegen/cli@npm:2.11.0"
   dependencies:
@@ -1952,6 +1952,22 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
   checksum: 09b61c6c1de897205181c720ba6ec1460473f1dcda98daa1ada1cc4bbbe3ce7e479b219b5daa1ca66090e0de7f32b6d1c503a4eb069d88d8595b49f9d0e6e5b0
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/typescript-graphql-request@npm:^4.5.2":
+  version: 4.5.2
+  resolution: "@graphql-codegen/typescript-graphql-request@npm:4.5.2"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.6.0
+    "@graphql-codegen/visitor-plugin-common": 2.12.0
+    auto-bind: ~4.0.0
+    tslib: ~2.4.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+    graphql-request: ^3.4.0 || ^4.0.0
+    graphql-tag: ^2.0.0
+  checksum: b2bae42791943e13055b1d51c010539b811df4b6e7a37971d5cc673c7c9973a3148c36ce3d4077dd4bd868d88a47cab2a1e077ce8e5f2da367790c15fc8f9c4e
   languageName: node
   linkType: hard
 
@@ -7975,7 +7991,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-request@npm:^4.0.0":
+"graphql-request@npm:^4.0.0, graphql-request@npm:^4.3.0":
   version: 4.3.0
   resolution: "graphql-request@npm:4.3.0"
   dependencies:
@@ -8005,6 +8021,13 @@ __metadata:
   peerDependencies:
     graphql: ">=0.11 <=16"
   checksum: 5fcb4da352f2273b8056f06e48fb4d5957304e85e593d65b509960f9344fe4ff32c4d1a067bb3f81704d3f552d826d79a606a8fde00d3af7822b9b25998ce8aa
+  languageName: node
+  linkType: hard
+
+"graphql@npm:^16.5.0":
+  version: 16.5.0
+  resolution: "graphql@npm:16.5.0"
+  checksum: a82a926d085818934d04fdf303a269af170e79de943678bd2726370a96194f9454ade9d6d76c2de69afbd7b9f0b4f8061619baecbbddbe82125860e675ac219e
   languageName: node
   linkType: hard
 
@@ -11261,9 +11284,10 @@ __metadata:
     "@babel/preset-typescript": ^7.18.6
     "@babel/runtime": ^7.18.9
     "@changesets/cli": ^2.24.1
-    "@graphql-codegen/cli": ^2.9.1
+    "@graphql-codegen/cli": ^2.11.0
     "@graphql-codegen/typed-document-node": ^2.3.2
     "@graphql-codegen/typescript": ^2.7.2
+    "@graphql-codegen/typescript-graphql-request": ^4.5.2
     "@graphql-codegen/typescript-operations": ^2.5.2
     "@lingui/cli": ^3.14.0
     "@prettier/plugin-xml": ^2.2.0
@@ -13088,8 +13112,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "shared@workspace:packages/shared"
   dependencies:
+    "@graphql-codegen/cli": ^2.11.0
+    "@graphql-codegen/typescript-graphql-request": ^4.5.2
     "@types/qrcode": ^1
+    graphql: ^16.5.0
+    graphql-request: ^4.3.0
     qrcode: ^1.5.1
+    zustand: ^4.0.0
   languageName: unknown
   linkType: soft
 
@@ -14487,7 +14516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.0.0":
+"use-sync-external-store@npm:1.2.0, use-sync-external-store@npm:^1.0.0":
   version: 1.2.0
   resolution: "use-sync-external-store@npm:1.2.0"
   peerDependencies:
@@ -15002,5 +15031,22 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "zustand@npm:4.0.0"
+  dependencies:
+    use-sync-external-store: 1.2.0
+  peerDependencies:
+    immer: ">=9.0"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: b8ae5971dff79a1007d46f9a6bfa39ed5cc5b101a877eeec069ebdb6c8285ec8e3463e40cfa7c0f1507a41f43fe26ffb44b556063cb70ac03bccf1ea6e0f69d6
   languageName: node
   linkType: hard

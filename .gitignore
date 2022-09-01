@@ -171,7 +171,6 @@ assets
 !.yarn/sdks
 !.yarn/versions
 
-releases
 .notes
 .archive
 dist/*

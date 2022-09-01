@@ -3,6 +3,7 @@
 	"main": "src/index.ts",
 	"packageManager": "yarn@3.2.1",
 	"dependencies": {
+		"@types/qrcode": "^1.5.0",
 		"graphql": "^16.6.0",
 		"graphql-request": "^5.0.0",
 		"qrcode": "^1.5.1",
@@ -10,8 +11,7 @@
 	},
 	"devDependencies": {
 		"@graphql-codegen/cli": "^2.12.0",
-		"@graphql-codegen/typescript-graphql-request": "^4.5.4",
-		"@types/qrcode": "^1.5.0"
+		"@graphql-codegen/typescript-graphql-request": "^4.5.4"
 	},
 	"scripts": {
 		"prebuild": "graphql-codegen --config .graphqlrc"

@@ -1,14 +1,21 @@
 import React from 'react';
 import Svg, { Circle, Path, Polygon, Rect, SvgProps } from 'react-native-svg';
-import type { IconType } from 'react-icons/lib';
 import { ColorValue } from 'react-native';
-import icons from 'shared/src/icons';
+import { icons } from '@nuggxyz/nugg-kit-shared';
 
 export type IconName = keyof typeof icons;
 
 type Setter = Partial<typeof icons[IconName]>;
 
 type Child = NonNullable<Setter['child']>[number];
+
+export interface IconBaseProps extends React.SVGAttributes<SVGElement> {
+	children?: React.ReactNode;
+	size?: string | number;
+	color?: string;
+	title?: string;
+}
+export declare type IconType = (props: IconBaseProps) => JSX.Element;
 
 const IconSwitch = ({ child, fill }: { child: Child; fill: ColorValue }) => {
 	switch (child.tag) {

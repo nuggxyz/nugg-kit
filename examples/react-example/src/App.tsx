@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import './App.css';
-import NuggKitQR from '@nuggxyz/nugg-kit-react/src/NuggKitQR';
+import { NuggKitQR } from '@nuggxyz/nugg-kit-react';
 
 const App = () => {
 	const [count, setCount] = useState(0);
@@ -19,7 +19,10 @@ const App = () => {
 					background: 'trqnsparent',
 				}}
 			>
-				<NuggKitQR data={{ code: '1234', key: '2343' }} />
+				<NuggKitQR
+					cipher="dsafdsadfasdsfdsfdsafasdfasdfasdfasdf"
+					uuid="asdfadsfasdfasdfsadfsdasdfsdasddsfasdfsad"
+				/>
 			</div>
 			<h1>Vite + React</h1>
 			<div className="card">

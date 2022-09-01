@@ -1,9 +1,9 @@
 {
 	"name": "@nuggxyz/nugg-kit-react",
 	"packageManager": "yarn@3.2.1",
-	"main": "dist/index.js",
+	"main": "src/index.ts",
 	"dependencies": {
-		"@nuggxyz/nugg-kit-shared": "../shared",
+		"@nuggxyz/nugg-kit-shared": "workspace:^",
 		"react": "^18.2.0"
 	},
 	"devDependencies": {

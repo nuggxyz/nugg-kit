@@ -1,5 +1,5 @@
 {
-	"name": "nuggkit--root",
+	"name": "@nuggxyz/nugg-kit",
 	"packageManager": "yarn@3.2.3",
 	"workspaces": {
 		"packages": [
@@ -70,6 +70,8 @@
 		"eslint-plugin-unused-imports": "^2.0.0",
 		"eslint-plugin-yaml": "^0.5.0",
 		"jest": "^29.0.1",
+		"lerna": "^5.5.0",
+		"nx": "^14.6.1",
 		"prettier": "^2.7.1",
 		"ts-jest": "^28.0.8",
 		"typechain": "^8.1.0",
@@ -79,9 +81,5 @@
 	"resolutions": {
 		"terser": "^5.14.2",
 		"undici": "^5.9.0"
-	},
-	"dependencies": {
-		"lerna": "^5.5.0",
-		"qrcode": "^1.5.1"
 	}
 }

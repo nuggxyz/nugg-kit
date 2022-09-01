@@ -1,4 +1,4 @@
-import * as qrUtils from './qr-utils';
+import * as qrUtils from './qr';
 import icons from './icons';
 
-export default { qrUtils, icons };
+export { qrUtils, icons };

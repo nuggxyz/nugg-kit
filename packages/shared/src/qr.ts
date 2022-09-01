@@ -60,13 +60,11 @@ export const makeSvg = (dots: string[]) => {
 export const makeDots = (
 	ecl: QRCodeUtil.QRCodeErrorCorrectionLevel,
 	// size: number,
-	uri: {
-		code: string;
-		key: string;
-	},
+	uuid: string,
+	cipher: string,
 ) => {
 	const dots: string[] = [];
-	const matrix = generateMatrix(uri, ecl);
+	const matrix = generateMatrix({ uuid, cipher }, ecl);
 
 	const cellSize = QR_SIZE / matrix.length;
 	const qrList = [

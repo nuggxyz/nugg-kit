@@ -3,8 +3,7 @@
 	"compilerOptions": {
 		"target": "es2022",
 		"lib": ["esnext"],
-		"baseUrl": ".",
-		"outDir": "./dist"
+		"baseUrl": "."
 	},
-	"include": ["src/*"]
+	"include": ["index.ts", "src/**/*"]
 }

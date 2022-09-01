@@ -1,5 +1,5 @@
+import { qrUtils } from '@nuggxyz/nugg-kit-shared';
 import React from 'react';
-import { makeDots, makeSvg } from '@nuggxyz/nugg-kit-shared/src/qr-utils';
 
 const getParsed = (input: string) => {
 	if (input.startsWith('ERROR') || input === '') {
@@ -31,11 +31,11 @@ export type NuggKitQRProps = {
 
 const useSvgString = (uuid: string, cipher: string) => {
 	const dots = React.useMemo(() => {
-		return makeDots('M', uuid, cipher);
+		return qrUtils.makeDots('M', uuid, cipher);
 	}, [uuid, cipher]);
 
 	const svg = React.useMemo(() => {
-		return makeSvg(dots);
+		return qrUtils.makeSvg(dots);
 	}, [dots]);
 
 	return svg;

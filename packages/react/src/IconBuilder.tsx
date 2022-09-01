@@ -1,6 +1,6 @@
+import { icons } from '@nuggxyz/nugg-kit-shared';
 import type { SvgProperties } from 'csstype';
 import React from 'react';
-import icons from '@nuggxyz/nugg-kit-shared/src/icons';
 
 export type IconName = keyof typeof icons;
 

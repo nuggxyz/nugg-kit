@@ -1,12 +1,13 @@
 {
 	"name": "@nuggxyz/nugg-kit",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"packageManager": "yarn@3.2.3",
 	"main": "packages/*",
 	"workspaces": {
 		"packages": [
 			"packages/**",
-			"examples/**"
+			"examples/**",
+			"."
 		]
 	},
 	"scripts": {

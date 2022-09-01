@@ -8,7 +8,8 @@ const generateMatrix = (
 ) => {
 	const arr = Array.prototype.slice.call(
 		(
-			QRCodeUtil.create(JSON.stringify(value), { errorCorrectionLevel }).modules as {
+			QRCodeUtil.create(JSON.stringify(value), { errorCorrectionLevel })
+				.modules as unknown as {
 				data: QRCodeUtil.QRCode;
 			}
 		).data,

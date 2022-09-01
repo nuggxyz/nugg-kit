@@ -3274,11 +3274,11 @@ __metadata:
 
 "@nuggxyz/nugg-kit-react@file:../../packages/react::locator=dapp-react-example%40workspace%3Aexamples%2Freact-example":
   version: 0.0.0
-  resolution: "@nuggxyz/nugg-kit-react@file:../../packages/react#../../packages/react::hash=c66caf&locator=dapp-react-example%40workspace%3Aexamples%2Freact-example"
+  resolution: "@nuggxyz/nugg-kit-react@file:../../packages/react#../../packages/react::hash=0c8525&locator=dapp-react-example%40workspace%3Aexamples%2Freact-example"
   dependencies:
     "@nuggxyz/nugg-kit-shared": ../shared
     react: ^18.2.0
-  checksum: 23f0db9b658bed6aa04cf0e7f702d15a4fde318b39a42d84cd0e56dc009bc553b0ebc59f9e8573f0e8671d3a2c0d1cfb8bcafedd1e6ce799dc2d3ac1aeeec4e1
+  checksum: 1e85508cb05d7f8cdff1d7dbb47d7b3890959f39a89324156363c4647da5dbd8c759b358df5eeda4cb4b2060b675afb4654d5547def7cbe5ac5a1863a7d5929e
   languageName: node
   linkType: hard
 
@@ -3292,39 +3292,39 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nuggxyz/nugg-kit-shared@file:../shared::locator=%40nuggxyz%2Fnugg-kit-react%40file%3A..%2F..%2Fpackages%2Freact%23..%2F..%2Fpackages%2Freact%3A%3Ahash%3Dc66caf%26locator%3Ddapp-react-example%2540workspace%253Aexamples%252Freact-example":
+"@nuggxyz/nugg-kit-shared@file:../shared::locator=%40nuggxyz%2Fnugg-kit-react%40file%3A..%2F..%2Fpackages%2Freact%23..%2F..%2Fpackages%2Freact%3A%3Ahash%3D0c8525%26locator%3Ddapp-react-example%2540workspace%253Aexamples%252Freact-example":
   version: 0.0.0
-  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=e6f6c9&locator=%40nuggxyz%2Fnugg-kit-react%40file%3A..%2F..%2Fpackages%2Freact%23..%2F..%2Fpackages%2Freact%3A%3Ahash%3Dc66caf%26locator%3Ddapp-react-example%2540workspace%253Aexamples%252Freact-example"
+  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=cb47f8&locator=%40nuggxyz%2Fnugg-kit-react%40file%3A..%2F..%2Fpackages%2Freact%23..%2F..%2Fpackages%2Freact%3A%3Ahash%3D0c8525%26locator%3Ddapp-react-example%2540workspace%253Aexamples%252Freact-example"
   dependencies:
-    graphql: ^16.5.0
-    graphql-request: ^4.3.0
+    graphql: ^16.6.0
+    graphql-request: ^5.0.0
     qrcode: ^1.5.1
     zustand: ^4.0.0
-  checksum: b1936d377da7e636d5f689498262115f9565536bacb9f8f49641d1d81c8398b27960cd4b354baa745f8a5db174e1394ef6cdd006fc36db9af0364185a4f1c001
+  checksum: e4a24d1c2651e9b3e4e90c006ee3084385b4232fe2eca9aa75cec9b91578a1d8acf880e8ca7c924f1a074cf81975ea4f967a68776ff79c9b2cbf3ec2dab008c2
   languageName: node
   linkType: hard
 
 "@nuggxyz/nugg-kit-shared@file:../shared::locator=%40nuggxyz%2Fnugg-kit-react%40workspace%3Apackages%2Freact":
   version: 0.0.0
-  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=e6f6c9&locator=%40nuggxyz%2Fnugg-kit-react%40workspace%3Apackages%2Freact"
+  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=cb47f8&locator=%40nuggxyz%2Fnugg-kit-react%40workspace%3Apackages%2Freact"
   dependencies:
-    graphql: ^16.5.0
-    graphql-request: ^4.3.0
+    graphql: ^16.6.0
+    graphql-request: ^5.0.0
     qrcode: ^1.5.1
     zustand: ^4.0.0
-  checksum: b1936d377da7e636d5f689498262115f9565536bacb9f8f49641d1d81c8398b27960cd4b354baa745f8a5db174e1394ef6cdd006fc36db9af0364185a4f1c001
+  checksum: e4a24d1c2651e9b3e4e90c006ee3084385b4232fe2eca9aa75cec9b91578a1d8acf880e8ca7c924f1a074cf81975ea4f967a68776ff79c9b2cbf3ec2dab008c2
   languageName: node
   linkType: hard
 
 "@nuggxyz/nugg-kit-shared@file:../shared::locator=%40nuggxyz%2Fnugg-kit-react-native%40workspace%3Apackages%2Freact-native":
   version: 0.0.0
-  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=e6f6c9&locator=%40nuggxyz%2Fnugg-kit-react-native%40workspace%3Apackages%2Freact-native"
+  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=cb47f8&locator=%40nuggxyz%2Fnugg-kit-react-native%40workspace%3Apackages%2Freact-native"
   dependencies:
-    graphql: ^16.5.0
-    graphql-request: ^4.3.0
+    graphql: ^16.6.0
+    graphql-request: ^5.0.0
     qrcode: ^1.5.1
     zustand: ^4.0.0
-  checksum: b1936d377da7e636d5f689498262115f9565536bacb9f8f49641d1d81c8398b27960cd4b354baa745f8a5db174e1394ef6cdd006fc36db9af0364185a4f1c001
+  checksum: e4a24d1c2651e9b3e4e90c006ee3084385b4232fe2eca9aa75cec9b91578a1d8acf880e8ca7c924f1a074cf81975ea4f967a68776ff79c9b2cbf3ec2dab008c2
   languageName: node
   linkType: hard
 
@@ -4029,18 +4029,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.0.15
-  resolution: "@types/react@npm:18.0.15"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: e22cc388d1c145aa184787e44dc28db4789976c704cd5db475c170bb76a560eb81def5f346cfe750949bb3d43ad88822b8cbb9f19b1286e3795892a8263e7715
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^18.0.18":
+"@types/react@npm:^18":
   version: 18.0.18
   resolution: "@types/react@npm:18.0.18"
   dependencies:
@@ -8693,7 +8682,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-request@npm:^4.0.0, graphql-request@npm:^4.3.0":
+"graphql-request@npm:^4.0.0":
   version: 4.3.0
   resolution: "graphql-request@npm:4.3.0"
   dependencies:
@@ -8737,13 +8726,6 @@ __metadata:
   peerDependencies:
     graphql: ">=0.11 <=16"
   checksum: 5fcb4da352f2273b8056f06e48fb4d5957304e85e593d65b509960f9344fe4ff32c4d1a067bb3f81704d3f552d826d79a606a8fde00d3af7822b9b25998ce8aa
-  languageName: node
-  linkType: hard
-
-"graphql@npm:^16.5.0":
-  version: 16.5.0
-  resolution: "graphql@npm:16.5.0"
-  checksum: a82a926d085818934d04fdf303a269af170e79de943678bd2726370a96194f9454ade9d6d76c2de69afbd7b9f0b4f8061619baecbbddbe82125860e675ac219e
   languageName: node
   linkType: hard
 
@@ -14636,9 +14618,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"terser@npm:^5.7.2":
-  version: 5.14.2
-  resolution: "terser@npm:5.14.2"
+"terser@npm:^5.14.2":
+  version: 5.15.0
+  resolution: "terser@npm:5.15.0"
   dependencies:
     "@jridgewell/source-map": ^0.3.2
     acorn: ^8.5.0
@@ -14646,7 +14628,7 @@ __metadata:
     source-map-support: ~0.5.20
   bin:
     terser: bin/terser
-  checksum: cabb50a640d6c2cfb351e4f43dc7bf7436f649755bb83eb78b2cacda426d5e0979bd44e6f92d713f3ca0f0866e322739b9ced888ebbce6508ad872d08de74fcc
+  checksum: b2358c989fcb76b4a1c265f60e175c950d3f776e5f619a9f58f54e8d2d792cd6b4cca86071834075f3b9943556d695357bafdd4ee2390de2fc9fd96ba3efa8c8
   languageName: node
   linkType: hard
 
@@ -15130,14 +15112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:5.5.1":
-  version: 5.5.1
-  resolution: "undici@npm:5.5.1"
-  checksum: c041c9093df7ec683479a9555581206a7c7bebfc1ed6e8669920e55618461fc4ce08938e2fbf8ef7d692c2813c44392b5ed25c58396ee4a72ffd1f1f953712c9
-  languageName: node
-  linkType: hard
-
-"undici@npm:^5.8.0":
+"undici@npm:^5.9.0":
   version: 5.10.0
   resolution: "undici@npm:5.10.0"
   checksum: 7ba2b71dccc74cd2bdf645b83e9aaef374ae04855943d0a2f42a3d0b9e5556f37cc9b5156fb5288277a2fa95fd46a56f3ae0d5cf73db3f008d75ec41104b136c

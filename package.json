@@ -81,6 +81,7 @@
 		"undici": "^5.9.0"
 	},
 	"dependencies": {
+		"lerna": "^5.5.0",
 		"qrcode": "^1.5.1"
 	}
 }

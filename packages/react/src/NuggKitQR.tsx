@@ -1,4 +1,3 @@
-import type { QRCodeErrorCorrectionLevel } from 'qrcode';
 import React from 'react';
 import { makeDots, makeSvg } from '@nuggxyz/nugg-kit-shared/src/qr-utils';
 
@@ -25,15 +24,15 @@ const getSvgObject = (input: string) => {
 	return new DOMParser().parseFromString(str, 'image/svg+xml');
 };
 
-type Props = {
-	ecl?: QRCodeErrorCorrectionLevel;
-	data: { key: string; code: string };
+export type NuggKitQRProps = {
+	uuid: string;
+	cipher: string;
 };
 
-const useSvgString = ({ ecl = 'M', data }: Props) => {
+const useSvgString = (uuid: string, cipher: string) => {
 	const dots = React.useMemo(() => {
-		return makeDots(ecl, data);
-	}, [ecl, data]);
+		return makeDots('M', uuid, cipher);
+	}, [uuid, cipher]);
 
 	const svg = React.useMemo(() => {
 		return makeSvg(dots);
@@ -71,17 +70,14 @@ const QR = React.memo(
 	(prev, curr) => prev.svgString === curr.svgString,
 );
 
-export const useNuggKitQR = (data: Props['data'], ecl = 'M' as Props['ecl']) => {
-	const svgString = useSvgString({
-		data,
-		ecl,
-	});
+export const useNuggKitQR = (uuid: string, cipher: string) => {
+	const svgString = useSvgString(uuid, cipher);
 
 	return <QR svgString={svgString} />;
 };
 
-const NuggKitQR = ({ ecl = 'M', data }: Props) => {
-	return useNuggKitQR(data, ecl);
+const NuggKitQR = ({ uuid, cipher }: NuggKitQRProps) => {
+	return useNuggKitQR(uuid, cipher);
 };
 
 export default NuggKitQR;

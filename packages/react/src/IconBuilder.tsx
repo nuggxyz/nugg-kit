@@ -1,9 +1,16 @@
 import type { SvgProperties } from 'csstype';
 import React from 'react';
-import type { IconType } from 'react-icons/lib';
 import icons from '@nuggxyz/nugg-kit-shared/src/icons';
 
 export type IconName = keyof typeof icons;
+
+export interface IconBaseProps extends React.SVGAttributes<SVGElement> {
+	children?: React.ReactNode;
+	size?: string | number;
+	color?: string;
+	title?: string;
+}
+export declare type IconType = (props: IconBaseProps) => JSX.Element;
 
 type Setter = Partial<typeof icons[IconName]>;
 

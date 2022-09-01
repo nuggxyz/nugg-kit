@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+
 import './App.css';
-import NuggKitQR from 'dapp-react/src/NuggKitQR';
+import NuggKitQR from '@nuggxyz/nugg-kit-react/src/NuggKitQR';
 
 const App = () => {
 	const [count, setCount] = useState(0);

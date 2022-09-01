@@ -1,0 +1,6 @@
+subscription Wait($id: ID!, $data: String!) {
+	wait(input: { id: $id, data: $data }) {
+		data
+		id
+	}
+}

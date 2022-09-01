@@ -1,7 +1,7 @@
 {
     overwrite: true,
-    schema: [./lib/schema.graphql],
-    documents: src/**/*,
+    schema: [./graphql/schema.graphql],
+    documents: graphql/*.graphql,
     generates:
         {
             ./src/gen/graphql.types.ts:

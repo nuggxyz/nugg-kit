@@ -1,27 +1,24 @@
-import { gql } from 'graphql-request';
+import { GraphQLClient } from 'graphql-request';
 import { combine } from 'zustand/middleware';
 import create from 'zustand/vanilla';
 
-import { Sdk } from './gen/graphql.types';
+import { WaitSubscription, getSdk } from './gen/graphql.types';
 
-const abc = gql`
-	subscription Help($id: ID!, $data: String!) {
-		wait(input: { id: $id, data: $data }) {
-			id
-			data
-		}
-	}
-`;
+const https_client = new GraphQLClient('http://us.dev02.nuggapi.v1.api.nugg.xyz/graphql');
+
+const wss_client = new GraphQLClient('wss://us.dev02.nuggapi.v1.api.nugg.xyz/graphql/realtime');
 
 const store = create(
 	combine(
 		{
-			socket: null as Sdk | null,
+			socket: null as WaitSubscription | null,
 			ttl: 0,
 			id: 0,
 		},
 		(set, get) => {
-			const updateSocket = (nextSocket: Sdk) => {};
+			const trigger = async (dat: { data: string; id: string }) => {
+				const dats = await getSdk(wss_client).Wait(dat);
+			};
 		},
 	),
 );

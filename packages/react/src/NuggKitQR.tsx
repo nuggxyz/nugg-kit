@@ -1,6 +1,6 @@
 import type { QRCodeErrorCorrectionLevel } from 'qrcode';
 import React from 'react';
-import { makeDots, makeSvg } from 'shared/src/qr-utils';
+import { makeDots, makeSvg } from '@nuggxyz/nugg-kit-shared/src/qr-utils';
 
 const getParsed = (input: string) => {
 	if (input.startsWith('ERROR') || input === '') {

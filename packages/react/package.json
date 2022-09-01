@@ -1,10 +1,10 @@
 {
-	"name": "dapp-react",
+	"name": "@nuggxyz/nugg-kit-react",
 	"packageManager": "yarn@3.2.1",
 	"main": "dist/index.js",
 	"dependencies": {
-		"react": "^18.2.0",
-		"shared": "workspace:^"
+		"@nuggxyz/nugg-kit-shared": "../shared",
+		"react": "^18.2.0"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.15"

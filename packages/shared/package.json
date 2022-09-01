@@ -1,5 +1,5 @@
 {
-	"name": "shared",
+	"name": "@nuggxyz/nugg-kit-shared",
 	"main": "src/index.ts",
 	"packageManager": "yarn@3.2.1",
 	"dependencies": {

@@ -2855,6 +2855,89 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuggxyz/nugg-kit-react-native@workspace:packages/react-native":
+  version: 0.0.0-use.local
+  resolution: "@nuggxyz/nugg-kit-react-native@workspace:packages/react-native"
+  dependencies:
+    "@nuggxyz/nugg-kit-shared": ../shared
+    "@types/react": ^18.0.15
+    "@types/react-native": ^0
+    react: ^18.2.0
+    react-native: ^0.69.3
+    react-native-svg: ^12.4.3
+  languageName: unknown
+  linkType: soft
+
+"@nuggxyz/nugg-kit-react@file:../../packages/react::locator=dapp-react-example%40workspace%3Aexamples%2Freact-example":
+  version: 0.0.0
+  resolution: "@nuggxyz/nugg-kit-react@file:../../packages/react#../../packages/react::hash=c66caf&locator=dapp-react-example%40workspace%3Aexamples%2Freact-example"
+  dependencies:
+    "@nuggxyz/nugg-kit-shared": ../shared
+    react: ^18.2.0
+  checksum: 23f0db9b658bed6aa04cf0e7f702d15a4fde318b39a42d84cd0e56dc009bc553b0ebc59f9e8573f0e8671d3a2c0d1cfb8bcafedd1e6ce799dc2d3ac1aeeec4e1
+  languageName: node
+  linkType: hard
+
+"@nuggxyz/nugg-kit-react@workspace:packages/react":
+  version: 0.0.0-use.local
+  resolution: "@nuggxyz/nugg-kit-react@workspace:packages/react"
+  dependencies:
+    "@nuggxyz/nugg-kit-shared": ../shared
+    "@types/react": ^18.0.15
+    react: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
+"@nuggxyz/nugg-kit-shared@file:../shared::locator=%40nuggxyz%2Fnugg-kit-react%40file%3A..%2F..%2Fpackages%2Freact%23..%2F..%2Fpackages%2Freact%3A%3Ahash%3Dc66caf%26locator%3Ddapp-react-example%2540workspace%253Aexamples%252Freact-example":
+  version: 0.0.0
+  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=e6f6c9&locator=%40nuggxyz%2Fnugg-kit-react%40file%3A..%2F..%2Fpackages%2Freact%23..%2F..%2Fpackages%2Freact%3A%3Ahash%3Dc66caf%26locator%3Ddapp-react-example%2540workspace%253Aexamples%252Freact-example"
+  dependencies:
+    graphql: ^16.5.0
+    graphql-request: ^4.3.0
+    qrcode: ^1.5.1
+    zustand: ^4.0.0
+  checksum: b1936d377da7e636d5f689498262115f9565536bacb9f8f49641d1d81c8398b27960cd4b354baa745f8a5db174e1394ef6cdd006fc36db9af0364185a4f1c001
+  languageName: node
+  linkType: hard
+
+"@nuggxyz/nugg-kit-shared@file:../shared::locator=%40nuggxyz%2Fnugg-kit-react%40workspace%3Apackages%2Freact":
+  version: 0.0.0
+  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=e6f6c9&locator=%40nuggxyz%2Fnugg-kit-react%40workspace%3Apackages%2Freact"
+  dependencies:
+    graphql: ^16.5.0
+    graphql-request: ^4.3.0
+    qrcode: ^1.5.1
+    zustand: ^4.0.0
+  checksum: b1936d377da7e636d5f689498262115f9565536bacb9f8f49641d1d81c8398b27960cd4b354baa745f8a5db174e1394ef6cdd006fc36db9af0364185a4f1c001
+  languageName: node
+  linkType: hard
+
+"@nuggxyz/nugg-kit-shared@file:../shared::locator=%40nuggxyz%2Fnugg-kit-react-native%40workspace%3Apackages%2Freact-native":
+  version: 0.0.0
+  resolution: "@nuggxyz/nugg-kit-shared@file:../shared#../shared::hash=e6f6c9&locator=%40nuggxyz%2Fnugg-kit-react-native%40workspace%3Apackages%2Freact-native"
+  dependencies:
+    graphql: ^16.5.0
+    graphql-request: ^4.3.0
+    qrcode: ^1.5.1
+    zustand: ^4.0.0
+  checksum: b1936d377da7e636d5f689498262115f9565536bacb9f8f49641d1d81c8398b27960cd4b354baa745f8a5db174e1394ef6cdd006fc36db9af0364185a4f1c001
+  languageName: node
+  linkType: hard
+
+"@nuggxyz/nugg-kit-shared@workspace:packages/shared":
+  version: 0.0.0-use.local
+  resolution: "@nuggxyz/nugg-kit-shared@workspace:packages/shared"
+  dependencies:
+    "@graphql-codegen/cli": ^2.11.0
+    "@graphql-codegen/typescript-graphql-request": ^4.5.2
+    "@types/qrcode": ^1
+    graphql: ^16.5.0
+    graphql-request: ^4.3.0
+    qrcode: ^1.5.1
+    zustand: ^4.0.0
+  languageName: unknown
+  linkType: soft
+
 "@pkgr/utils@npm:^2.3.0":
   version: 2.3.0
   resolution: "@pkgr/utils@npm:2.3.0"
@@ -5839,41 +5922,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dapp-react-example@workspace:examples/dapp-react-example":
+"dapp-react-example@workspace:examples/react-example":
   version: 0.0.0-use.local
-  resolution: "dapp-react-example@workspace:examples/dapp-react-example"
+  resolution: "dapp-react-example@workspace:examples/react-example"
   dependencies:
+    "@nuggxyz/nugg-kit-react": ../../packages/react
     "@types/react": ^18.0.15
     "@types/react-dom": ^18.0.6
     "@vitejs/plugin-react": ^2.0.0
-    dapp-react: "workspace:^"
     react: ^18.2.0
     react-dom: ^18.2.0
     typescript: ^4.6.4
     vite: ^3.0.0
-  languageName: unknown
-  linkType: soft
-
-"dapp-react-native@workspace:packages/dapp-react-native":
-  version: 0.0.0-use.local
-  resolution: "dapp-react-native@workspace:packages/dapp-react-native"
-  dependencies:
-    "@types/react": ^18.0.15
-    "@types/react-native": ^0
-    react: ^18.2.0
-    react-native: ^0.69.3
-    react-native-svg: ^12.4.3
-    shared: "workspace:^"
-  languageName: unknown
-  linkType: soft
-
-"dapp-react@workspace:^, dapp-react@workspace:packages/dapp-react":
-  version: 0.0.0-use.local
-  resolution: "dapp-react@workspace:packages/dapp-react"
-  dependencies:
-    "@types/react": ^18.0.15
-    react: ^18.2.0
-    shared: "workspace:^"
   languageName: unknown
   linkType: soft
 
@@ -13107,20 +13167,6 @@ __metadata:
   checksum: 39b3dd9630a774aba288a680e7d2901f5c0eae7b8387fc5c8ea559918b29b3da144b7bdb990d7ccd9e11be05508ac9e459ce51d01fd65e583282f6ffafcba2e7
   languageName: node
   linkType: hard
-
-"shared@workspace:^, shared@workspace:packages/shared":
-  version: 0.0.0-use.local
-  resolution: "shared@workspace:packages/shared"
-  dependencies:
-    "@graphql-codegen/cli": ^2.11.0
-    "@graphql-codegen/typescript-graphql-request": ^4.5.2
-    "@types/qrcode": ^1
-    graphql: ^16.5.0
-    graphql-request: ^4.3.0
-    qrcode: ^1.5.1
-    zustand: ^4.0.0
-  languageName: unknown
-  linkType: soft
 
 "shebang-command@npm:^1.2.0":
   version: 1.2.0

@@ -3249,6 +3249,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuggxyz/nugg-kit-react-example@workspace:examples/react-example":
+  version: 0.0.0-use.local
+  resolution: "@nuggxyz/nugg-kit-react-example@workspace:examples/react-example"
+  dependencies:
+    "@nuggxyz/nugg-kit-react": "workspace:^"
+    "@types/react": ^18.0.18
+    "@types/react-dom": ^18.0.6
+    "@vitejs/plugin-react": ^2.0.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^4.8.2
+    vite: ^3.0.9
+  languageName: unknown
+  linkType: soft
+
 "@nuggxyz/nugg-kit-react-native@workspace:packages/react-native":
   version: 0.0.0-use.local
   resolution: "@nuggxyz/nugg-kit-react-native@workspace:packages/react-native"
@@ -3377,21 +3392,6 @@ __metadata:
     webpack: ^5.74.0
   peerDependencies:
     "@types/react-native": "*"
-  languageName: unknown
-  linkType: soft
-
-"@nuggxyz/react-example@workspace:examples/react-example":
-  version: 0.0.0-use.local
-  resolution: "@nuggxyz/react-example@workspace:examples/react-example"
-  dependencies:
-    "@nuggxyz/nugg-kit-react": "workspace:^"
-    "@types/react": ^18.0.18
-    "@types/react-dom": ^18.0.6
-    "@vitejs/plugin-react": ^2.0.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    typescript: ^4.8.2
-    vite: ^3.0.9
   languageName: unknown
   linkType: soft
 

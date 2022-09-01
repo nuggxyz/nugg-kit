@@ -1,7 +1,6 @@
 {
 	"name": "@nuggxyz/nugg-kit-react",
-	"main": "dist/index.js",
-	"version": "0.1.1",
+	"main": "src/index.ts",
 	"author": "@nuggxyz",
 	"license": "AGPL-3.0",
 	"packageManager": "yarn@3.2.1",
@@ -21,5 +20,6 @@
 		"@types/react": "*",
 		"react": "*",
 		"react-dom": "*"
-	}
+	},
+	"version": null
 }

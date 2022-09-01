@@ -1,7 +1,6 @@
 {
 	"name": "@nuggxyz/nugg-kit-typescript",
-	"main": "dist/index.js",
-	"version": "0.1.1",
+	"main": "src/index.ts",
 	"author": "@nuggxyz",
 	"license": "AGPL-3.0",
 	"packageManager": "yarn@3.2.1",
@@ -26,5 +25,6 @@
 		"README.md",
 		"LICENSE",
 		"package.json"
-	]
+	],
+	"version": null
 }

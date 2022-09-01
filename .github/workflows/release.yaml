@@ -1,6 +1,6 @@
 {
     name: release + npm,
-    on: { push: { tags: ['v*'] } },
+    on: { push: { tags: ['*'] } },
     env:
         {
             NPM_AUTH_TOKEN: '${{ secrets.NPM_AUTOMATION_KEY }}',

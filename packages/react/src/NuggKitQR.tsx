@@ -1,4 +1,4 @@
-import { qrUtils } from '@nuggxyz/nugg-kit-shared';
+import { qrUtils } from 'packages/typescript/src';
 import React from 'react';
 
 const getParsed = (input: string) => {

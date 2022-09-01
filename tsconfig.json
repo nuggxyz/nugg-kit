@@ -26,5 +26,11 @@
 		"strictNullChecks": true
 	},
 	"include": ["packages", "examples"],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules"],
+	"references": [
+		// if you tsconfig is something different
+		{ "@nuggxyz/nugg-kit-react": "./packages/react" },
+		{ "@nuggxyz/nugg-kit-shared": "./packages/shared" },
+		{ "@nuggxyz/nugg-kit-react-native": "./packages/react-native" }
+	]
 }

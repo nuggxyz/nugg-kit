@@ -34,6 +34,8 @@
 		"@types/lodash": "^4.14.184",
 		"@types/qrcode": "^1.5.0",
 		"@types/qs": "^6.9.7",
+		"@types/react": "^18.0.18",
+		"@types/react-native": "^0.69.6",
 		"@types/websocket": "^1.0.5",
 		"@types/workbox-webpack-plugin": "^5.1.8",
 		"@types/ws": "^8.5.3",
@@ -81,5 +83,12 @@
 	"resolutions": {
 		"terser": "^5.14.2",
 		"undici": "^5.9.0"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-native": "^0.69.5"
+	},
+	"peerDependencies": {
+		"@types/react-native": "*"
 	}
 }

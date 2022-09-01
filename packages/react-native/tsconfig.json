@@ -5,7 +5,7 @@
 		"target": "es2022",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"baseUrl": ".",
-		"outDir": "./dist/react-native"
+		"outDir": "./dist"
 	},
 	"include": ["src/*"]
 }

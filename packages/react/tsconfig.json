@@ -4,8 +4,7 @@
 		"jsx": "react",
 		"target": "es2022",
 		"lib": ["dom", "dom.iterable", "esnext"],
-		"baseUrl": ".",
-		"outDir": "./dist/react"
+		"outDir": "./dist"
 	},
 	"include": ["index.ts", "src/**/*"]
 }

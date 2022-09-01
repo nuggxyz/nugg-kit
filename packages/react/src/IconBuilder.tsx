@@ -1,4 +1,4 @@
-import { icons } from '@nuggxyz/nugg-kit-shared';
+import { icons } from 'packages/typescript/src';
 import type { SvgProperties } from 'csstype';
 import React from 'react';
 

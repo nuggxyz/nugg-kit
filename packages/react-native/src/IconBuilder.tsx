@@ -1,7 +1,7 @@
 import React from 'react';
 import Svg, { Circle, Path, Polygon, Rect, SvgProps } from 'react-native-svg';
 import { ColorValue } from 'react-native';
-import { icons } from '@nuggxyz/nugg-kit-shared';
+import { icons } from '@nuggxyz/nugg-kit-typescript';
 
 export type IconName = keyof typeof icons;
 

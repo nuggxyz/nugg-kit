@@ -3253,17 +3253,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nuggxyz/nugg-kit-react-native@workspace:packages/react-native"
   dependencies:
-    "@nuggxyz/nugg-kit-shared": "workspace:^"
+    "@nuggxyz/nugg-kit-typescript": "workspace:^"
     "@types/react": ^18.0.18
     "@types/react-native": ^0.69.6
     react: ^18.2.0
     react-native: ^0.69.5
-    react-native-svg: ^13.1.0
+    react-native-svg: "*"
+    typescript: ^4.8.2
   peerDependencies:
     "@types/react": "*"
     "@types/react-native": "*"
     react: "*"
     react-native: "*"
+    react-native-svg: "*"
   languageName: unknown
   linkType: soft
 
@@ -3271,9 +3273,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nuggxyz/nugg-kit-react@workspace:packages/react"
   dependencies:
-    "@nuggxyz/nugg-kit-shared": "workspace:^"
+    "@nuggxyz/nugg-kit-typescript": "workspace:^"
     "@types/react": ^18.0.18
     react: ^18.2.0
+    typescript: ^4.8.2
   peerDependencies:
     "@types/react": "*"
     react: "*"
@@ -3281,9 +3284,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nuggxyz/nugg-kit-shared@workspace:^, @nuggxyz/nugg-kit-shared@workspace:packages/shared":
+"@nuggxyz/nugg-kit-typescript@workspace:^, @nuggxyz/nugg-kit-typescript@workspace:packages/typescript":
   version: 0.0.0-use.local
-  resolution: "@nuggxyz/nugg-kit-shared@workspace:packages/shared"
+  resolution: "@nuggxyz/nugg-kit-typescript@workspace:packages/typescript"
   dependencies:
     "@graphql-codegen/cli": ^2.12.0
     "@graphql-codegen/typescript-graphql-request": ^4.5.4
@@ -3291,6 +3294,7 @@ __metadata:
     graphql: ^16.6.0
     graphql-request: ^5.0.0
     qrcode: ^1.5.1
+    typescript: ^4.8.2
     zustand: ^4.0.0
   languageName: unknown
   linkType: soft
@@ -3324,6 +3328,8 @@ __metadata:
     "@types/lodash": ^4.14.184
     "@types/qrcode": ^1.5.0
     "@types/qs": ^6.9.7
+    "@types/react": ^18.0.18
+    "@types/react-native": ^0.69.6
     "@types/websocket": ^1.0.5
     "@types/workbox-webpack-plugin": ^5.1.8
     "@types/ws": ^8.5.3
@@ -3363,10 +3369,14 @@ __metadata:
     jest: ^29.0.1
     nx: ^14.6.1
     prettier: ^2.7.1
+    react: ^18.2.0
+    react-native: ^0.69.5
     ts-jest: ^28.0.8
     typechain: ^8.1.0
     typescript: ^4.8.2
     webpack: ^5.74.0
+  peerDependencies:
+    "@types/react-native": "*"
   languageName: unknown
   linkType: soft
 
@@ -12987,7 +12997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-svg@npm:^13.1.0":
+"react-native-svg@npm:*":
   version: 13.1.0
   resolution: "react-native-svg@npm:13.1.0"
   dependencies:

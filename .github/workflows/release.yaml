@@ -31,7 +31,6 @@
                                     },
                             },
                             { run: yarn },
-                            { run: yarn package },
                             {
                                 run: 'yarn config set npmAuthToken $NPM_AUTH_TOKEN',
                             },

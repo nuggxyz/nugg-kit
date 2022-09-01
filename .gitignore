@@ -164,7 +164,7 @@ src/locales/en-US.po
 assets
 
 .yarn/*
-!.yarn/cache
+.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases

@@ -36,6 +36,9 @@
                                 run: 'yarn config set npmAuthToken $NPM_AUTH_TOKEN',
                             },
                             {
+                                run: 'source ../../bin/set-version.sh',
+                            },
+                            {
                                 run: 'yarn workspaces foreach run build',
                             },
                             {

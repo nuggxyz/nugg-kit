@@ -1,5 +1,6 @@
 {
 	"name": "@nuggxyz/nugg-kit",
+	"version": "0.0.1",
 	"packageManager": "yarn@3.2.3",
 	"main": "packages/*",
 	"workspaces": {
@@ -7,6 +8,13 @@
 			"packages/**",
 			"examples/**"
 		]
+	},
+	"scripts": {
+		"version:get": "grep '\"version\"' package.json | sed 's/.*\"version\": \"\\(.*\\)\".*/\\1/'",
+		"version:tag": "yarn changeset tag",
+		"version:commit": "git add . && git commit -m \"v$(yarn version:get)\"",
+		"version:changeset": "yarn changeset add && yarn changeset version",
+		"release": "yarn version:changeset  && yarn version:commit && yarn version:tag"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.18.13",

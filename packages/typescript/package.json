@@ -2,7 +2,7 @@
 	"name": "@nuggxyz/nugg-kit-typescript",
 	"main": "src/index.ts",
 	"author": "@nuggxyz",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"license": "AGPL-3.0",
 	"packageManager": "yarn@3.2.1",
 	"dependencies": {

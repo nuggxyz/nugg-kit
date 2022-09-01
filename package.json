@@ -1,6 +1,6 @@
 {
 	"name": "@nuggxyz/nugg-kit",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"packageManager": "yarn@3.2.3",
 	"main": "packages/*",
 	"workspaces": {
@@ -11,8 +11,8 @@
 	},
 	"scripts": {
 		"version:get": "grep '\"version\"' package.json | sed 's/.*\"version\": \"\\(.*\\)\".*/\\1/'",
-		"version:tag": "yarn changeset tag && git tag \"v$(yarn version:get)\"",
-		"version:commit": "git add . && git commit -m \"v$(yarn version:get)\"",
+		"version:tag": "yarn changeset tag",
+		"version:commit": "git add . && git commit -m \"version bump\"",
 		"version:changeset": "yarn changeset add && yarn changeset version",
 		"release": "yarn version:changeset  && yarn version:commit && yarn version:tag"
 	},

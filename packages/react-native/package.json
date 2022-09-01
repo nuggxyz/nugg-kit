@@ -6,16 +6,17 @@
 		"@types/react": "^18.0.18",
 		"@types/react-native": "^0.69.6",
 		"react": "^18.2.0",
-		"react-native": "^0.69.5"
+		"react-native": "^0.69.5",
+		"react-native-svg": "*"
 	},
 	"dependencies": {
-		"@nuggxyz/nugg-kit-shared": "workspace:^",
-		"react-native-svg": "^13.1.0"
+		"@nuggxyz/nugg-kit-shared": "workspace:^"
 	},
 	"peerDependencies": {
 		"@types/react": "*",
 		"@types/react-native": "*",
 		"react": "*",
-		"react-native": "*"
+		"react-native": "*",
+		"react-native-svg": "*"
 	}
 }

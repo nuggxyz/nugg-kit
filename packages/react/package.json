@@ -2,11 +2,16 @@
 	"name": "@nuggxyz/nugg-kit-react",
 	"packageManager": "yarn@3.2.1",
 	"main": "src/index.ts",
+	"peerDependencies": {
+		"@types/react": "*",
+		"react": "*",
+		"react-dom": "*"
+	},
 	"dependencies": {
-		"@nuggxyz/nugg-kit-shared": "workspace:^",
-		"react": "^18.2.0"
+		"@nuggxyz/nugg-kit-shared": "workspace:^"
 	},
 	"devDependencies": {
-		"@types/react": "^18.0.18"
+		"@types/react": "^18.0.18",
+		"react": "^18.2.0"
 	}
 }

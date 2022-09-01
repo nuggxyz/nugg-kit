@@ -1,6 +1,7 @@
 {
 	"name": "@nuggxyz/nugg-kit",
 	"packageManager": "yarn@3.2.3",
+	"main": "packages/*",
 	"workspaces": {
 		"packages": [
 			"packages/**",
@@ -70,7 +71,6 @@
 		"eslint-plugin-unused-imports": "^2.0.0",
 		"eslint-plugin-yaml": "^0.5.0",
 		"jest": "^29.0.1",
-		"lerna": "^5.5.0",
 		"nx": "^14.6.1",
 		"prettier": "^2.7.1",
 		"ts-jest": "^28.0.8",

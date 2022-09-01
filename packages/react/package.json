@@ -1,6 +1,7 @@
 {
 	"name": "@nuggxyz/nugg-kit-react",
-	"main": "src/index.ts",
+	"main": "dist/index.js",
+	"version": "0.1.0",
 	"author": "@nuggxyz",
 	"license": "AGPL-3.0",
 	"packageManager": "yarn@3.2.1",

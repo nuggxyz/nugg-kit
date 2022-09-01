@@ -1,6 +1,12 @@
 # @nuggxyz/nugg-kit-typescript
 
-## null
+## 0.3.0
+
+### Minor Changes
+
+-   fixing the versions and tags
+
+## 0.2.0
 
 ### Minor Changes
 

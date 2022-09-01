@@ -1,6 +1,17 @@
 # @nuggxyz/react-example
 
-## 0.1.0
+## 0.3.0
+
+### Minor Changes
+
+-   fixing the versions and tags
+
+### Patch Changes
+
+-   Updated dependencies
+    -   @nuggxyz/nugg-kit-react@0.3.0
+
+## 0.2.0
 
 ### Minor Changes
 

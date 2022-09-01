@@ -1,6 +1,17 @@
 # @nuggxyz/nugg-kit-react
 
-## null
+## 0.3.0
+
+### Minor Changes
+
+-   fixing the versions and tags
+
+### Patch Changes
+
+-   Updated dependencies
+    -   @nuggxyz/nugg-kit-typescript@0.3.0
+
+## 0.2.0
 
 ### Minor Changes
 
@@ -9,7 +20,7 @@
 ### Patch Changes
 
 -   Updated dependencies
-    -   @nuggxyz/nugg-kit-typescript@null
+    -   @nuggxyz/nugg-kit-typescript@0.2.0
 
 ## 0.1.1
 

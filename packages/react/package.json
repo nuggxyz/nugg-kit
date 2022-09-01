@@ -3,6 +3,7 @@
 	"main": "src/index.ts",
 	"author": "@nuggxyz",
 	"license": "AGPL-3.0",
+	"version": "0.3.0",
 	"packageManager": "yarn@3.2.1",
 	"scripts": {
 		"prebuild": "",
@@ -20,6 +21,5 @@
 		"@types/react": "*",
 		"react": "*",
 		"react-dom": "*"
-	},
-	"version": null
+	}
 }

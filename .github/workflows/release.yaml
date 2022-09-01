@@ -1,6 +1,6 @@
 {
     name: release + npm,
-    on: { push: { tags: ['@*'] } },
+    on: { push: { branches: ['main'] } },
     env:
         {
             NPM_AUTH_TOKEN: '${{ secrets.NPM_AUTOMATION_KEY }}',

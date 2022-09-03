@@ -1,5 +1,13 @@
 # @nuggxyz/nugg-kit-react-native
 
+## 0.3.2
+
+### Patch Changes
+
+-   add ClientSideCrypto
+-   Updated dependencies
+    -   @nuggxyz/nugg-kit-typescript@0.3.2
+
 ## 0.3.1
 
 ### Patch Changes

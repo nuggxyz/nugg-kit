@@ -1,5 +1,13 @@
 # @nuggxyz/react-example
 
+## 0.3.2
+
+### Patch Changes
+
+-   add ClientSideCrypto
+-   Updated dependencies
+    -   @nuggxyz/nugg-kit-react@0.3.2
+
 ## 0.3.1
 
 ### Patch Changes

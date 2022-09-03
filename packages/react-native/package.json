@@ -3,7 +3,7 @@
 	"main": "src/index.ts",
 	"author": "@nuggxyz",
 	"license": "AGPL-3.0",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"packageManager": "yarn@3.2.1",
 	"devDependencies": {
 		"@types/react": "^18.0.18",

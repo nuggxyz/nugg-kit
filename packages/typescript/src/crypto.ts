@@ -45,7 +45,12 @@ class crypto {
 
 	public static async decrypt(encrypted: ArrayBuffer, key: ArrayBuffer) {
 		const thekey = await crypto.importKey(key);
-		const decrypted = await subtle.decrypt({ name: 'AES-GCM' }, thekey, encrypted);
+
+		const iv = new Uint8Array(encrypted.slice(0, 12));
+
+		const encryptedData = new Uint8Array(encrypted.slice(12));
+
+		const decrypted = await subtle.decrypt({ name: 'AES-GCM', iv }, thekey, encryptedData);
 		const decoded = new TextDecoder().decode(decrypted);
 		return decoded;
 	}

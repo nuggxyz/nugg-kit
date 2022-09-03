@@ -1,4 +1,5 @@
 import * as qrUtils from './qr';
 import icons from './icons';
+import { ClientSideCrypto } from './crypto';
 
-export { qrUtils, icons };
+export { qrUtils, icons, ClientSideCrypto };

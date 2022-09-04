@@ -1,4 +1,4 @@
-import { qrUtils } from 'packages/typescript/src';
+import { qrUtils } from '@nuggxyz/nugg-kit-typescript';
 import React from 'react';
 
 const getParsed = (input: string) => {
@@ -25,14 +25,14 @@ const getSvgObject = (input: string) => {
 };
 
 export type NuggKitQRProps = {
-	uuid: string;
-	cipher: string;
+	ksuid: string;
+	encryptionKey: string;
 };
 
-const useSvgString = (uuid: string, cipher: string) => {
+const useSvgString = (ksuid: string, encryptionKey: string) => {
 	const dots = React.useMemo(() => {
-		return qrUtils.makeDots('M', uuid, cipher);
-	}, [uuid, cipher]);
+		return qrUtils.makeDots('M', ksuid, encryptionKey);
+	}, [ksuid, encryptionKey]);
 
 	const svg = React.useMemo(() => {
 		return qrUtils.makeSvg(dots);
@@ -70,14 +70,14 @@ const QR = React.memo(
 	(prev, curr) => prev.svgString === curr.svgString,
 );
 
-export const useNuggKitQR = (uuid: string, cipher: string) => {
-	const svgString = useSvgString(uuid, cipher);
+export const useNuggKitQR = (ksuid: string, encryptionKey: string) => {
+	const svgString = useSvgString(ksuid, encryptionKey);
 
 	return <QR svgString={svgString} />;
 };
 
-const NuggKitQR = ({ uuid, cipher }: NuggKitQRProps) => {
-	return useNuggKitQR(uuid, cipher);
+const NuggKitQR = ({ ksuid, encryptionKey }: NuggKitQRProps) => {
+	return useNuggKitQR(ksuid, encryptionKey);
 };
 
 export default NuggKitQR;

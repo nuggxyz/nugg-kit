@@ -20,8 +20,8 @@ const App = () => {
 				}}
 			>
 				<NuggKitQR
-					cipher="dsafdsadfasdsfdsfdsafasdfasdfasdfasdf"
-					uuid="asdfadsfasdfasdfsadfsdasdfsdasddsfasdfsad"
+					ksuid="2EHbJpGgorGQyigvJrdb8AvYUdd"
+					encryptionKey="rHm91Ig2ZLSOj3BByYh0Dg=="
 				/>
 			</div>
 			<h1>Vite + React</h1>

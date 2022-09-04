@@ -3,13 +3,12 @@ import QRCodeUtil from 'qrcode';
 export const QR_SIZE = 250;
 export const LOGO_SIZE = 65;
 const generateMatrix = (
-	value: object,
+	value: string,
 	errorCorrectionLevel: QRCodeUtil.QRCodeErrorCorrectionLevel,
 ) => {
 	const arr = Array.prototype.slice.call(
 		(
-			QRCodeUtil.create(JSON.stringify(value), { errorCorrectionLevel })
-				.modules as unknown as {
+			QRCodeUtil.create(value, { errorCorrectionLevel }).modules as unknown as {
 				data: QRCodeUtil.QRCode;
 			}
 		).data,
@@ -60,11 +59,11 @@ export const makeSvg = (dots: string[]) => {
 export const makeDots = (
 	ecl: QRCodeUtil.QRCodeErrorCorrectionLevel,
 	// size: number,
-	uuid: string,
-	cipher: string,
+	ksuid: string,
+	key: string,
 ) => {
 	const dots: string[] = [];
-	const matrix = generateMatrix({ uuid, cipher }, ecl);
+	const matrix = generateMatrix(`${ksuid}|${key}`, ecl);
 
 	const cellSize = QR_SIZE / matrix.length;
 	const qrList = [

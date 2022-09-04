@@ -3,6 +3,7 @@
 	"private": true,
 	"version": "0.3.2",
 	"type": "module",
+	"main": "src/main.tsx",
 	"scripts": {
 		"start": "vite",
 		"preview": "vite preview"

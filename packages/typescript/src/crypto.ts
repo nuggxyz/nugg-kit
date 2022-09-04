@@ -1,5 +1,11 @@
 /* eslint-disable max-classes-per-file */
-import { subtle, getRandomValues } from 'crypto';
+
+const subtle = window ? window.crypto.subtle : (await import('crypto')).subtle;
+const getRandomValues = window
+	? // eslint-disable-next-line @typescript-eslint/unbound-method
+	  window.crypto.getRandomValues
+	: ((await import('crypto'))
+			.getRandomValues as unknown as typeof window['crypto']['getRandomValues']);
 
 class crypto {
 	public static async generateKey() {
